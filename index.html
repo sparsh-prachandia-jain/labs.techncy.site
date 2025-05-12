@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techncy Labs | Quantum Computing & Physics Research</title>
+  <meta name="description" content="Exploring the frontiers of quantum computing and physics mechanics research">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+<!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark">
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-indicator"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <a href="#" class="logo nav-item">
+          <i data-lucide="atom" class="icon-purple"></i>
+          <span>Techncy Labs</span>
+        </a>
+
+        <div class="desktop-nav">
+          <a href="#quantum" class="nav-item">Quantum Computing</a>
+          <a href="#physics" class="nav-item">Physics Mechanics</a>
+          <a href="#research" class="nav-item">Research Paper</a>
+          <button class="theme-toggle nav-item" aria-label="Toggle theme">
+            <i data-lucide="sun" class="sun-icon"></i>
+            <i data-lucide="moon" class="moon-icon"></i>
+          </button>
+        </div>
+
+        <button class="mobile-menu-toggle nav-item" aria-label="Toggle menu">
+          <i data-lucide="menu" class="menu-icon"></i>
+          <i data-lucide="x" class="close-icon hidden"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden">
+      <div class="container">
+        <a href="#quantum" class="mobile-nav-item">Quantum Computing</a>
+        <a href="#physics" class="mobile-nav-item">Physics Mechanics</a>
+        <a href="#research" class="mobile-nav-item">Research Paper</a>
+        <button class="theme-toggle-mobile mobile-nav-item">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+          Toggle theme
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="particles-container"></div>
+    <div class="quantum-grid"></div>
+
+    <div class="hero-content container">
+      <h1 class="hero-title">Exploring the Quantum Frontier</h1>
+      <p class="hero-subtitle">Advancing the boundaries of quantum computing and physics mechanics through innovative
+        research and experimentation</p>
+    </div>
+
+    <div class="scroll-indicator-arrow">
+      <i data-lucide="arrow-down" class="icon-purple"></i>
+    </div>
+  </section>
+
+  <!-- Quantum Computing Section -->
+  <section id="quantum" class="quantum-section">
+    <div class="container">
+      <h2 class="section-title quantum-title">Quantum Computing</h2>
+
+      <div class="quantum-grid-layout">
+        <div class="quantum-image">
+          <img src="qu.png" alt="Quantum Computer Visualization">
+          <div class="image-overlay"></div>
+          <div class="image-caption">
+            <h3>Quantum Supremacy</h3>
+            <p>Achieving computational tasks beyond classical capabilities</p>
+          </div>
+        </div>
+
+        <div class="quantum-cards">
+          <div class="quantum-card glassmorphism">
+            <i data-lucide="cpu" class="icon-purple"></i>
+            <h3>Quantum Bits</h3>
+            <p>Unlike classical bits, qubits can exist in multiple states simultaneously through superposition,
+              exponentially increasing computational power.</p>
+          </div>
+
+          <div class="quantum-card glassmorphism">
+            <i data-lucide="zap" class="icon-purple"></i>
+            <h3>Quantum Entanglement</h3>
+            <p>Particles become correlated in ways that cannot be explained by classical physics, enabling quantum
+              teleportation and secure communication.</p>
+          </div>
+
+          <div class="quantum-card glassmorphism">
+            <i data-lucide="braces" class="icon-purple"></i>
+            <h3>Quantum Algorithms</h3>
+            <p>Specialized algorithms like Shor's and Grover's leverage quantum properties to solve problems faster than
+              any classical algorithm.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating particles -->
+    <div class="floating-atom top-left">
+      <i data-lucide="atom" class="icon-purple-faded"></i>
+    </div>
+    <div class="floating-atom bottom-right">
+      <i data-lucide="atom" class="icon-indigo-faded"></i>
+    </div>
+  </section>
+
+  <!-- Physics Mechanics Section -->
+  <section id="physics" class="physics-section">
+    <canvas id="wave-canvas"></canvas>
+
+    <div class="container">
+      <h2 class="section-title physics-title">Physics Mechanics</h2>
+
+      <div class="physics-cards">
+        <div class="physics-card neumorphism">
+          <i data-lucide="compass" class="icon-indigo"></i>
+          <h3>Classical Mechanics</h3>
+          <p>The study of motion and forces acting on physical bodies, from Newton's laws to Lagrangian mechanics.</p>
+        </div>
+
+        <div class="physics-card neumorphism">
+          <i data-lucide="waves" class="icon-indigo"></i>
+          <h3>Wave Mechanics</h3>
+          <p>Exploring the behavior of waves, including interference, diffraction, and the wave-particle duality.</p>
+        </div>
+
+        <div class="physics-card neumorphism">
+          <i data-lucide="orbit" class="icon-indigo"></i>
+          <h3>Quantum Mechanics</h3>
+          <p>The fundamental theory describing nature at the smallest scales, where classical physics breaks down.</p>
+        </div>
+
+        <div class="physics-card neumorphism">
+          <i data-lucide="gauge" class="icon-indigo"></i>
+          <h3>Thermodynamics</h3>
+          <p>The study of heat, work, and energy transfer, governing the behavior of physical systems.</p>
+        </div>
+      </div>
+
+      <div class="physics-description">
+        <p>Our research bridges the gap between classical and quantum physics, exploring the fundamental principles that
+          govern our universe from the subatomic to the cosmic scale.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Paper Section -->
+  <section id="research" class="research-section">
+    <div class="quantum-grid"></div>
+
+    <div class="container">
+      <h2 class="section-title research-title">Research Paper</h2>
+
+      <div class="paper-container glassmorphism">
+        <div class="paper-header">
+          <div class="paper-header-left">
+            <i data-lucide="file-text" class="icon-blue"></i>
+            <span>Research Publication</span>
+          </div>
+          <div class="paper-header-right">
+            <button class="icon-button">
+              <i data-lucide="share-2"></i>
+            </button>
+            <button class="icon-button">
+              <i data-lucide="download"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="paper-content">
+          <h3 class="paper-title">Consciousness, Many Worlds, and Ghosts: Exploring the “Iota Universe” Hypothesis</h3>
+
+          <div class="paper-meta">
+            <span>Authors: Sparsh Prachandia Jain</span>
+            <span>Published: May 2025</span>
+          </div>
+
+          <div class="paper-text">
+            <p>This section will contain your research paper content. You can add the text here later. The paper will
+              discuss quantum entanglement and its applications in modern computing systems.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt,
+              nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl. Nullam auctor, nisl eget ultricies tincidunt,
+              nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.</p>
+
+            <h4>Abstract</h4>
+            <p>This paper explores a speculative framework linking the many-worlds interpretation (MWI) of quantum
+              mechanics with theories of consciousness and the phenomenon of ghosts. The central hypothesis posits that
+              every individual has quantum branches corresponding to possible actions, and that consciousness is "stuck"
+              in one such universe. The proposed "iota universe" is a branch in which the individual lacks physical
+              presence but retains a form of conscious awareness, potentially manifesting as ghost-like phenomena. We
+              examine the theoretical underpinnings of MWI, quantum theories of consciousness such as Orch-OR, and
+              scientific perspectives on ghost reports, aiming to contextualize this novel idea within current
+              scientific discourse</p>
+
+            <h4>Introduction</h4>
+            <p>The intersection of quantum mechanics and consciousness has long intrigued scientists and philosophers
+              alike. While mainstream science treats these domains as largely separate, speculative theories have
+              emerged seeking to unify them. This paper introduces the concept of an "iota universe"—a unique quantum
+              branch devoid of physical presence but retaining conscious awareness—and suggests it could explain certain
+              ghost phenomena.</p>
+
+            <h4>Theoretical Foundations</h4>
+            <p>Many-Worlds Interpretation
+              The Many-Worlds Interpretation, proposed by Hugh Everett in 1957, holds that the universal wavefunction
+              evolves deterministically without collapse. Every quantum event branches into multiple, non-communicating
+              outcomes, effectively creating parallel realities. In this view, each possible action a person might take
+              corresponds to a different branch.</p>
+            <h4>Quantum Consciousness Theories</h4>
+            <p>Several controversial theories propose that consciousness may arise from quantum processes. Notably, the
+              Orch-OR (Orchestrated Objective Reduction) theory by Penrose and Hameroff suggests that consciousness
+              results from quantum computations in neural microtubules. While intriguing, these ideas face significant
+              skepticism due to issues like rapid decoherence in the brain's warm environment.</p>
+            <h4>Consciousness and Quantum Branching</h4>
+            <p>
+              In MWI, observers split into copies across branches. Philosophical implications such as quantum
+              immortality suggest that consciousness continues along branches where survival persists. This leads to the
+              question: what happens to consciousness in branches where the body ceases to exist? Could consciousness
+              persist independently?</p>
+            <h4> Ghost Phenomena in Science and Culture</h4>
+            <p>
+              Ghosts are widely reported across cultures, yet scientific investigations typically attribute them to
+              psychological, environmental, or neurological causes. Studies reveal that experiences of hauntings often
+              stem from pareidolia, sleep paralysis, or infrasound. No physical evidence for ghosts exists, and such
+              entities would likely violate energy conservation laws.
+
+            </p>
+            <div class="paper-quote">
+              <p><span style="font-weight: 900;">The Iota Universe Hypothesis:</span><br>
+                This paper proposes the "iota universe" as a branch in which an individual's consciousness persists
+                after physical death. Unlike quantum immortality, which keeps the body alive, this theory suggests that
+                consciousness detaches and occupies a branch without material form. This non-physical presence could be
+                perceived as a ghost.</p>
+            </div>
+            <h4> Conclusion</h4>
+            <p>
+              The iota universe theory bridges ideas from quantum mechanics, consciousness studies, and cultural reports
+              of ghosts. Though speculative, it invites further exploration of consciousness as a quantum phenomenon and
+              encourages dialogue between science and metaphysical traditions.
+
+            </p>
+            <h4> References:</h4>
+            <p>
+              Everett, H. (1957). "Relative State" Formulation of Quantum Mechanics.
+<br>
+              Penrose, R., & Hameroff, S. (1996). Orchestrated reduction of quantum coherence in brain microtubules.
+<br>
+              Tegmark, M. (2000). Importance of decoherence in brain processes.
+<br>
+              Stanford Encyclopedia of Philosophy: Many-Worlds Interpretation.
+<br>
+              Scientific American, Psychology Today: Analyses of ghost phenomena.
+            </p>
+
+            <p>This paper presents a speculative hypothesis combining concepts from quantum mechanics, consciousness
+              studies, and anecdotal ghost phenomena. It is intended for general science discussion and philosophical
+              inquiry. The ideas discussed herein are not established scientific theories and should not be interpreted
+              as conclusive evidence. Readers are encouraged to approach the contents with critical thinking and
+              curiosity. This paper does not intend to offend or contradict any religious beliefs or sentiments. Any
+              resemblance to spiritual or cultural interpretations is purely coincidental and philosophical in nature.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="#" class="logo">
+            <i data-lucide="atom" class="icon-purple"></i>
+            <span>Techncy Labs</span>
+          </a>
+          <p>Exploring the frontiers of quantum computing and physics mechanics through innovative research and
+            experimentation.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#quantum">Quantum Computing</a></li>
+            <li><a href="#physics">Physics Mechanics</a></li>
+            <li><a href="#research">Research Paper</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h3>Connect</h3>
+          <div class="social-icons">
+            
+            <a href="https://x.com/Sparsh__Jain_?t=uOKc6mEh_pqjVqNgkyRSKQ&s=09" aria-label="Twitter">
+              <i data-lucide="twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sparsh-prachandia-jain-941115317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sparsh-prachandia-jain-941115317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Techncy Labs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- GSAP for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
